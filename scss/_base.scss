@@ -1,0 +1,65 @@
+header {
+  background-color: black;
+  color: white;
+
+  .desktop__header {
+    display: flex;
+
+    .ul__navbar {
+      list-style: none;
+
+      li {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+
+  .mobile__header {
+    display: none;
+
+    .offcanvas {
+      width: 70%;
+      background-color: black;
+    }
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .desktop__header {
+      display: none;
+    }
+
+    .mobile__header {
+      display: flex;
+
+      .ul__navbar--mobile {
+        list-style: none;
+
+        li {
+          margin: 0.5rem 0;
+        }
+
+        .ul__hide {
+          list-style: none;
+        }
+      }
+    }
+  }
+}
+
+main {
+  .carousel__section {
+    img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+}
