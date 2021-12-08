@@ -2,29 +2,37 @@ header {
   background-color: black;
   color: white;
 }
+
 header .desktop__header {
   display: flex;
 }
+
 header .desktop__header .ul__navbar {
   list-style: none;
 }
+
 header .desktop__header .ul__navbar li {
   margin: 0 0.5rem;
 }
+
 header .mobile__header {
   display: none;
 }
+
 header .mobile__header .offcanvas {
   width: 70%;
   background-color: black;
 }
+
 header a {
   color: white;
   text-decoration: none;
 }
+
 header a:hover {
   color: white;
 }
+
 @media only screen and (max-width: 768px) {
   header .desktop__header {
     display: none;
@@ -47,5 +55,4 @@ main .carousel__section img {
   max-height: 300px;
   object-fit: cover;
 }
-
 /*# sourceMappingURL=style.css.map */
