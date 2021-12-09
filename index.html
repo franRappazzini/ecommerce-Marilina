@@ -24,7 +24,16 @@
         <nav class="d-flex align-items-center">
           <ul class="ul__navbar d-flex m-0 p-0">
             <li><a href="">HOME</a></li>
-            <li><a href="">INDUMENTARIA</a></li>
+            <li>
+              INDUMENTARIA +
+              <ul>
+                <li>ropa</li>
+                <li>ropa</li>
+                <li>ropa</li>
+                <li>ropa</li>
+                <li>ropa</li>
+              </ul>
+            </li>
             <li><a href="">PREGUNTAS FRECUENTES</a></li>
             <li><a href="">CONTACTO</a></li>
           </ul>
@@ -71,8 +80,8 @@
             <div class="offcanvas-body">
               <nav class="d-flex align-items-center">
                 <ul class="ul__navbar--mobile m-0 p-0">
-                  <li>HOME</li>
-                  <li class="li__indumentaria">
+                  <li><a href="">HOME</a></li>
+                  <li>
                     INDUMENTARIA +
 
                     <ul class="ul__hide ps-4" style="display: none">
@@ -83,8 +92,8 @@
                       <li>ropa</li>
                     </ul>
                   </li>
-                  <li>PREGUNTAS FRECUENTES</li>
-                  <li>CONTACTO</li>
+                  <li><a href="">PREGUNTAS FRECUENTES</a></li>
+                  <li><a href="">CONTACTO</a></li>
                 </ul>
               </nav>
             </div>
@@ -177,7 +186,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
     <script>
       const firebaseConfig = {
         apiKey: "AIzaSyAHJtu7kxN_bRpDQMqvB--AMcQNtYd3-kE",
@@ -189,7 +202,7 @@
       };
 
       firebase.initializeApp(firebaseConfig);
-    </script>
+    </script> -->
     <script src="js/main.js"></script>
   </body>
 </html>

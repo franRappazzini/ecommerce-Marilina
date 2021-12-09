@@ -13,6 +13,18 @@ header .desktop__header .ul__navbar {
 
 header .desktop__header .ul__navbar li {
   margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+header .desktop__header .ul__navbar li ul {
+  display: none;
+}
+
+header .desktop__header .ul__navbar li:hover ul {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  background-color: black;
 }
 
 header .mobile__header {

@@ -10,6 +10,18 @@ header {
 
       li {
         margin: 0 0.5rem;
+        cursor: pointer;
+
+        ul {
+          display: none;
+        }
+
+        &:hover ul {
+          display: block;
+          position: absolute;
+          z-index: 100;
+          background-color: black;
+        }
       }
     }
   }
