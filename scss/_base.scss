@@ -69,6 +69,7 @@ header {
 
 main {
   background-color: white;
+
   .carousel__container {
     img {
       max-height: 300px;
@@ -77,8 +78,9 @@ main {
   }
 
   .item-fixed {
-    position: sticky;
+    position: fixed;
     bottom: 3%;
+    right: 0;
 
     img {
       width: 4rem;

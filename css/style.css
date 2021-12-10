@@ -73,8 +73,9 @@ main .carousel__container img {
 }
 
 main .item-fixed {
-  position: sticky;
+  position: fixed;
   bottom: 3%;
+  right: 0;
 }
 
 main .item-fixed img {
