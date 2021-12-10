@@ -1,8 +1,24 @@
+$(() => {
+  loader();
+});
+
+class Producto {
+  constructor(id, nombre, precio, descripcion, foto1, foto2, foto3) {
+    this.id = id;
+    this.nombre = nombre;
+    this.precio = precio;
+    this.descripcion = descripcion;
+    this.foto1 = foto1;
+    this.foto2 = foto2;
+    this.foto3 = foto3;
+  }
+}
+
 const productos = [];
 
 // -----renderiza los productos en el DOM-----
 function renderizarProductos() {
-  console.log(productos);
+  $(".productos").empty();
 
   productos.length > 0 &&
     productos.forEach((p) => {
@@ -17,6 +33,15 @@ function renderizarProductos() {
         </div>
       `);
     });
+}
+
+function loader() {
+  productos.length === 0 &&
+    $(".productos").append(`
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    `);
 }
 
 $(".productos").append("<p>hola</p>");
