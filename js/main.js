@@ -23,14 +23,16 @@ function renderizarProductos() {
   productos.length > 0 &&
     productos.forEach((p) => {
       $(".productos").append(`
-        <div class="card col-6 col-md-3 mb-3" style="width: auto;">
-          <img src="..." class="card-img-top" alt="${p.foto1}">
-          <div class="card-body">
-            <h5 class="card-title">${p.nombre}</h5>
-            <p class="card-text">${p.descripcion}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <article class="col-6 col-md-3 mb-3">
+          <div class="card" style="width: auto;">
+            <img src="..." class="card-img-top" alt="${p.foto1}">
+            <div class="card-body">
+              <h5 class="card-title">${p.nombre}</h5>
+              <p class="card-text">${p.descripcion}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
           </div>
-        </div>
+        </article>
       `);
     });
 }
