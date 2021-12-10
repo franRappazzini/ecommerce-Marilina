@@ -77,9 +77,8 @@ main {
   }
 
   .item-fixed {
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
+    position: sticky;
+    bottom: 3%;
 
     img {
       width: 4rem;
