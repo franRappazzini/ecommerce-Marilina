@@ -23,7 +23,7 @@ function renderizarProductos() {
   productos.length > 0 &&
     productos.forEach((p) => {
       $(".productos").append(`
-        <div class="card col-6 col-md-3" style="width: auto;">
+        <div class="card col-6 col-md-3 mb-3" style="width: auto;">
           <img src="..." class="card-img-top" alt="${p.foto1}">
           <div class="card-body">
             <h5 class="card-title">${p.nombre}</h5>
