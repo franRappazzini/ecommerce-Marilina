@@ -76,6 +76,7 @@ main .item-fixed {
   position: fixed;
   bottom: 3%;
   right: 0;
+  width: min-content;
 }
 
 main .item-fixed img {
