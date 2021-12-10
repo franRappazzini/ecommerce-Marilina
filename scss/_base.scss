@@ -68,10 +68,50 @@ header {
 }
 
 main {
+  background-color: white;
   .carousel__container {
     img {
       max-height: 300px;
       object-fit: cover;
+    }
+  }
+}
+
+footer {
+  background-color: black;
+  padding: 40px 0px;
+
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+    li {
+      font-size: 130%;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    li:nth-child(2) {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+body {
+  .item-fixed {
+    position: fixed;
+    bottom: 25px;
+    right: -870px;
+
+    img {
+    width: 10%;
     }
   }
 }
