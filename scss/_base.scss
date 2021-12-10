@@ -75,6 +75,16 @@ main {
       object-fit: cover;
     }
   }
+
+  .item-fixed {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+
+    img {
+      width: 4rem;
+    }
+  }
 }
 
 footer {
@@ -86,7 +96,7 @@ footer {
     margin-bottom: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 
     li {
       font-size: 130%;
@@ -100,18 +110,6 @@ footer {
     li:nth-child(2) {
       margin-right: 10px;
       margin-left: 10px;
-    }
-  }
-}
-
-body {
-  .item-fixed {
-    position: fixed;
-    bottom: 25px;
-    right: -870px;
-
-    img {
-    width: 10%;
     }
   }
 }
