@@ -9,4 +9,4 @@ console.log(db);
 db.collection("productos")
   .get()
   .then((res) => productos.push(...res.docs.map((doc) => doc.data())))
-  .then(() => console.log(productos));
+  .then(() => renderizarProductos());
