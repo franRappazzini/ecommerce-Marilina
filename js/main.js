@@ -18,7 +18,7 @@ const productos = [];
 
 // -----renderiza los productos en el DOM-----
 function renderizarProductos() {
-  $(".productos").empty();
+  $(".loader").remove();
 
   productos.length > 0 &&
     productos.forEach((p) => {
@@ -37,14 +37,14 @@ function renderizarProductos() {
 
 function loader() {
   productos.length === 0 &&
-    $(".productos").append(`
-      <div class="spinner-border" role="status">
-        <span class="visually-hidden">Loading...</span>
+    $(".productos__container").append(`
+      <div class="loader d-flex justify-content-center">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
       </div>
     `);
 }
-
-$(".productos").append("<p>hola</p>");
 
 // --------------------------------------------------
 $(".li__indumentaria").click(() => $(".ul__hide").toggle("fast"));
