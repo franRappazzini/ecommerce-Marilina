@@ -89,6 +89,33 @@ main {
   }
 }
 
+.info {
+  ul {
+    list-style: none;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 0rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    li {
+      font-size: 400%;
+      text-align: center;
+      
+      p {
+        font-size: 25px;
+      }
+    }
+
+    li:nth-child(2) {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
 footer {
   background-color: black;
   padding: 40px 0px;
@@ -99,6 +126,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-left: 0rem;
 
     li {
       font-size: 130%;
