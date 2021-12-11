@@ -25,13 +25,13 @@
           <ul class="ul__navbar d-flex m-0 p-0">
             <li><a href="">HOME</a></li>
             <li>
-              INDUMENTARIA +
+              INDUMENTARIA <span class="indumentaria__span">v</span>
               <ul>
-                <li>ropa</li>
-                <li>ropa</li>
-                <li>ropa</li>
-                <li>ropa</li>
-                <li>ropa</li>
+                <li class="todos">Todas</li>
+                <li class="remeras">Remeras</li>
+                <li class="musculosas">Musculosas</li>
+                <li class="shorts">Shorts</li>
+                <li class="calzas">Calzas</li>
               </ul>
             </li>
             <li><a href="">PREGUNTAS FRECUENTES</a></li>
@@ -85,11 +85,15 @@
                     INDUMENTARIA +
 
                     <ul class="ul__hide ps-4" style="display: none">
-                      <li>ropa</li>
-                      <li>ropa</li>
-                      <li>ropa</li>
-                      <li>ropa</li>
-                      <li>ropa</li>
+                      <li class="todos" data-bs-dismiss="offcanvas">Todas</li>
+                      <li class="remeras" data-bs-dismiss="offcanvas">
+                        Remeras
+                      </li>
+                      <li class="musculosas" data-bs-dismiss="offcanvas">
+                        Musculosas
+                      </li>
+                      <li class="shorts" data-bs-dismiss="offcanvas">Shorts</li>
+                      <li class="calzas" data-bs-dismiss="offcanvas">Calzas</li>
                     </ul>
                   </li>
                   <li><a href="">PREGUNTAS FRECUENTES</a></li>
@@ -179,14 +183,13 @@
 
       <!-- esto es solo de prueba -->
       <section class="productos__container container mt-3">
-        <!-- <ul class="ul__categorias">
+        <ul class="ul__categorias">
           <li class="todos">Todos los productos</li>
           <li class="remeras">Remeras</li>
           <li class="musculosas">Musculosas</li>
           <li class="shorts">Shorts</li>
           <li class="calzas">Calzas</li>
-        </ul> -->
-
+        </ul>
         <section class="productos row d-flex justify-content-between"></section>
       </section>
 
