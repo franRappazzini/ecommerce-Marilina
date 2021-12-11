@@ -22,6 +22,17 @@ const productos = [];
  * FUNCTIONS
  */
 
+// -----filtra por categoria-----
+function filterCategoria(productos, orderByCategorias, categoria) {
+  productos.forEach((p) => {
+    if (p.categoria === categoria || categoria === "Todas") {
+      orderByCategorias.push(p);
+    }
+  });
+
+  // return orderByCategorias;
+}
+
 // -----renderiza los productos en el DOM-----
 function renderizarProductos(productos, categoria) {
   $(".loader").remove();
@@ -35,9 +46,9 @@ function renderizarProductos(productos, categoria) {
 
   console.log(orderByCategorias);
 
-  orderByCategorias.length > 0 &&
-    orderByCategorias.forEach((p) => {
-      $(".productos").append(`
+  // orderByCategorias.length > 0 &&
+  orderByCategorias.forEach((p) => {
+    $(".productos").append(`
         <article class="col-6 col-md-3 mb-3">
           <div class="card" style="width: auto;">
             <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${p.foto1}" style="height: 10rem; object-fit: cover;">
@@ -90,6 +101,7 @@ function renderizarProductos(productos, categoria) {
                       <section class="col-12 col-md-6">
                         <p>Descripcion: ${p.descripcion}</p>
                         <p>Precio: $${p.precio}</p>
+                        <p>Categoria: ${p.categoria}</p>
                       </section>
                     </div>
                     <div class="modal-footer">
@@ -102,15 +114,6 @@ function renderizarProductos(productos, categoria) {
           </div>
         </article>
       `);
-    });
-}
-
-// -----filtra por categoria-----
-function filterCategoria(productos, orderByCategorias, categoria) {
-  productos.forEach((p) => {
-    if (p.categoria === categoria || categoria === "Todas") {
-      orderByCategorias.push(p);
-    }
   });
 }
 
@@ -128,22 +131,11 @@ function loader() {
 
 // -----hace funcionales los selectores de categorias-----
 function btnsCategoria() {
-  $(".remeras").click(() => {
-    renderizarProductos(productos, "remeras");
-    console.log("Remeras");
-  });
-  $(".musculosas").click(() => {
-    renderizarProductos(productos, "musculosas");
-    console.log("Musculosas");
-  });
-  $(".shorts").click(() => {
-    renderizarProductos(productos, "shorts");
-    console.log("Shorts");
-  });
-  $(".calzas").click(() => {
-    renderizarProductos(productos, "calzas");
-    console.log("Calzas");
-  });
+  $(".todos").click(() => renderizarProductos(productos, "Todas"));
+  $(".remeras").click(() => renderizarProductos(productos, "remeras"));
+  $(".musculosas").click(() => renderizarProductos(productos, "musculosas"));
+  $(".shorts").click(() => renderizarProductos(productos, "shorts"));
+  $(".calzas").click(() => renderizarProductos(productos, "calzas"));
 }
 
 // --------------------------------------------------
