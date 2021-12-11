@@ -4,15 +4,15 @@ $(() => {
 });
 
 class Producto {
-  constructor(id, nombre, categoria, precio, descripcion, foto1, foto2, foto3) {
+  constructor(id, nombre, categoria, precio, descripcion, img1, img2, img3) {
     this.id = id;
     this.nombre = nombre;
     this.categoria = categoria;
     this.precio = precio;
     this.descripcion = descripcion;
-    this.foto1 = foto1;
-    this.foto2 = foto2;
-    this.foto3 = foto3;
+    this.img1 = img1;
+    this.img2 = img2;
+    this.img3 = img3;
   }
 }
 
@@ -75,15 +75,15 @@ function renderizarProductos(productos, categoria) {
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                           </div>
-                          <div class="carousel-inner">
+                          <div class="carousel-inner hover__zoom">
                             <div class="carousel-item active">
-                              <img src="../assets/img/GA025006273.jpg" class="d-block w-100" alt="...">
+                              <img src="${p.img1}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                              <img src="../assets/img/GA025006273.jpg" class="d-block w-100" alt="...">
+                              <img src="${p.img2}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                              <img src="../assets/img/GA025006273.jpg" class="d-block w-100" alt="...">
+                              <img src="${p.img3}" class="d-block w-100" alt="...">
                             </div>
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

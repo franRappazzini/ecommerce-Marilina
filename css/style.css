@@ -82,6 +82,10 @@ main .productos__container .ul__categorias li {
   cursor: pointer;
 }
 
+main .productos__container .productos .hover__zoom:hover {
+  transform: scale(2);
+}
+
 main .info {
   margin-top: 7rem;
 }

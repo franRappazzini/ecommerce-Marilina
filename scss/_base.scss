@@ -87,6 +87,12 @@ main {
         cursor: pointer;
       }
     }
+
+    .productos {
+      .hover__zoom:hover {
+        transform: scale(2);
+      }
+    }
   }
 
   .info {
