@@ -21,7 +21,6 @@ const productos = [];
 /**
  * FUNCTIONS
  */
-
 // -----filtra por categoria-----
 function filterCategoria(productos, orderByCategorias, categoria) {
   productos.forEach((p) => {
@@ -51,7 +50,7 @@ function renderizarProductos(productos, categoria) {
     $(".productos").append(`
         <article class="col-6 col-md-3 mb-3">
           <div class="card" style="width: auto;">
-            <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${p.foto1}" style="height: 10rem; object-fit: cover;">
+            <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${p.foto1}" style="height: 12rem; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title">${p.nombre}</h5>
               <p class="card-text">${p.descripcion}</p>
@@ -105,7 +104,12 @@ function renderizarProductos(productos, categoria) {
                       </section>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Consultar stock por WhatsApp</button>
+                      <a href="https://wa.me/5493402449859/?text=Hola, cómo estás? Queria saber si te queda stock de ${p.nombre} en talle..."
+                      class="btn btn-success"
+                      target="_blank" rel="noopener noreferrer"
+                      >
+                        Consultar stock por WhatsApp
+                      </a>
                     </div>
                   </div>
                 </div>
