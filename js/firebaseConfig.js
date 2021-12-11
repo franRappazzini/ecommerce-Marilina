@@ -15,6 +15,7 @@ db.collection("productos")
           new Producto(
             doc.id,
             doc.data().nombre,
+            doc.data().categoria,
             doc.data().precio,
             doc.data().descripcion,
             doc.data().img1,
@@ -24,4 +25,4 @@ db.collection("productos")
       )
     )
   )
-  .then(() => renderizarProductos());
+  .then(() => renderizarProductos(productos, "Todas"));

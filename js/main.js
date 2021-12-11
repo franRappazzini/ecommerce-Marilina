@@ -1,11 +1,13 @@
 $(() => {
   loader();
+  btnsCategoria();
 });
 
 class Producto {
-  constructor(id, nombre, precio, descripcion, foto1, foto2, foto3) {
+  constructor(id, nombre, categoria, precio, descripcion, foto1, foto2, foto3) {
     this.id = id;
     this.nombre = nombre;
+    this.categoria = categoria;
     this.precio = precio;
     this.descripcion = descripcion;
     this.foto1 = foto1;
@@ -15,22 +17,30 @@ class Producto {
 }
 
 const productos = [];
-const categorias = [];
 
 /**
  * FUNCTIONS
  */
 
 // -----renderiza los productos en el DOM-----
-function renderizarProductos() {
+function renderizarProductos(productos, categoria) {
   $(".loader").remove();
+  $(".productos__container .productos").empty();
 
-  productos.length > 0 &&
-    productos.forEach((p) => {
+  const orderByCategorias = [];
+
+  orderByCategorias.push(
+    filterCategoria(productos, orderByCategorias, categoria)
+  );
+
+  console.log(orderByCategorias);
+
+  orderByCategorias.length > 0 &&
+    orderByCategorias.forEach((p) => {
       $(".productos").append(`
         <article class="col-6 col-md-3 mb-3">
           <div class="card" style="width: auto;">
-            <img src="..." class="card-img-top" alt="${p.foto1}">
+            <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${p.foto1}" style="height: 10rem; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title">${p.nombre}</h5>
               <p class="card-text">${p.descripcion}</p>
@@ -95,6 +105,15 @@ function renderizarProductos() {
     });
 }
 
+// -----filtra por categoria-----
+function filterCategoria(productos, orderByCategorias, categoria) {
+  productos.forEach((p) => {
+    if (p.categoria === categoria || categoria === "Todas") {
+      orderByCategorias.push(p);
+    }
+  });
+}
+
 // -----spinner mientras cargan los productos-----
 function loader() {
   productos.length === 0 &&
@@ -105,6 +124,26 @@ function loader() {
         </div>
       </div>
     `);
+}
+
+// -----hace funcionales los selectores de categorias-----
+function btnsCategoria() {
+  $(".remeras").click(() => {
+    renderizarProductos(productos, "remeras");
+    console.log("Remeras");
+  });
+  $(".musculosas").click(() => {
+    renderizarProductos(productos, "musculosas");
+    console.log("Musculosas");
+  });
+  $(".shorts").click(() => {
+    renderizarProductos(productos, "shorts");
+    console.log("Shorts");
+  });
+  $(".calzas").click(() => {
+    renderizarProductos(productos, "calzas");
+    console.log("Calzas");
+  });
 }
 
 // --------------------------------------------------
