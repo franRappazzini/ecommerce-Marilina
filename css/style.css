@@ -2,49 +2,39 @@ header {
   background-color: black;
   color: white;
 }
-
 header .desktop__header {
   display: flex;
 }
-
 header .desktop__header .ul__navbar {
   list-style: none;
 }
-
 header .desktop__header .ul__navbar li {
   margin: 0 0.5rem;
   cursor: pointer;
 }
-
 header .desktop__header .ul__navbar li ul {
   display: none;
 }
-
 header .desktop__header .ul__navbar li:hover ul {
   display: block;
   position: absolute;
   z-index: 100;
   background-color: black;
 }
-
 header .mobile__header {
   display: none;
 }
-
 header .mobile__header .offcanvas {
   width: 70%;
   background-color: black;
 }
-
 header a {
   color: white;
   text-decoration: none;
 }
-
 header a:hover {
   color: white;
 }
-
 @media only screen and (max-width: 768px) {
   header .desktop__header {
     display: none;
@@ -66,47 +56,64 @@ header a:hover {
 main {
   background-color: white;
 }
-
 main .carousel__container img {
   max-height: 300px;
   object-fit: cover;
 }
-
 main .item-fixed {
   position: fixed;
   bottom: 3%;
   right: 0;
   width: min-content;
 }
-
 main .item-fixed img {
   width: 4rem;
+}
+
+.info ul {
+  list-style: none;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 0rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.info ul li {
+  font-size: 400%;
+  text-align: center;
+}
+.info ul li p {
+  font-size: 25px;
+}
+.info ul li:nth-child(2) {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 footer {
   background-color: black;
   padding: 40px 0px;
 }
-
 footer ul {
   list-style: none;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-left: 0rem;
 }
-
 footer ul li {
   font-size: 130%;
 }
-
 footer ul li a {
   color: white;
   text-decoration: none;
 }
-
 footer ul li:nth-child(2) {
   margin-right: 10px;
   margin-left: 10px;
 }
+
 /*# sourceMappingURL=style.css.map */
