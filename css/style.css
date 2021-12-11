@@ -121,6 +121,9 @@ main .item-fixed img {
 }
 
 @media only screen and (max-width: 768px) {
+  main .productos__container .productos .hover__zoom {
+    pointer-events: none;
+  }
   main .info ul {
     flex-direction: column;
   }

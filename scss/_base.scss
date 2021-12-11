@@ -135,6 +135,13 @@ main {
   }
 
   @media only screen and (max-width: 768px) {
+    .productos__container {
+      .productos {
+        .hover__zoom {
+          pointer-events: none;
+        }
+      }
+    }
     .info ul {
       flex-direction: column;
 
