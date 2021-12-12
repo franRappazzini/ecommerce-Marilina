@@ -162,10 +162,15 @@ function loader() {
 // -----hace funcionales los selectores de categorias-----
 function btnsCategoria() {
   $(".todo").click(() => renderizarProductos(productos, "Todas"));
-  $(".remeras").click(() => renderizarProductos(productos, "remeras"));
-  $(".musculosas").click(() => renderizarProductos(productos, "musculosas"));
-  $(".shorts").click(() => renderizarProductos(productos, "shorts"));
+  $(".abrigos").click(() => renderizarProductos(productos, "abrigos"));
   $(".calzas").click(() => renderizarProductos(productos, "calzas"));
+  $(".conjuntos").click(() => renderizarProductos(productos, "conjuntos"));
+  $(".hombres").click(() => renderizarProductos(productos, "hombres"));
+  $(".kids").click(() => renderizarProductos(productos, "kids"));
+  $(".pantalones").click(() => renderizarProductos(productos, "pantalones"));
+  $(".remeras").click(() => renderizarProductos(productos, "remeras"));
+  $(".shorts").click(() => renderizarProductos(productos, "shorts"));
+  $(".tops").click(() => renderizarProductos(productos, "tops"));
 }
 
 // --------------------------------------------------
