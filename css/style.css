@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 header {
   background-color: black;
   color: white;
@@ -24,7 +25,23 @@ header .desktop__header .ul__navbar li:hover ul {
   display: block;
   position: absolute;
   z-index: 100;
+  list-style: none;
+  padding: 1rem 0 0 0;
   background-color: black;
+}
+
+header .desktop__header .ul__navbar li:hover ul li {
+  width: min-content;
+  margin: 0.5rem;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.5s;
+}
+
+header .desktop__header .ul__navbar li:hover ul li:hover {
+  background-size: 100% 1px;
 }
 
 header .mobile__header {
@@ -83,8 +100,9 @@ main .productos__container .ul__categorias li {
 }
 
 main .productos__container .productos .hover__zoom:hover {
-  transform: scale(2);
+  transform: scale(1.5);
   transition: 0.5s;
+  cursor: zoom-out;
 }
 
 main .info {
