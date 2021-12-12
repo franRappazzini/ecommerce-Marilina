@@ -25,7 +25,12 @@
           <ul class="ul__navbar d-flex m-0 p-0">
             <li><a href="">HOME</a></li>
             <li class="li__indumentaria">
-              INDUMENTARIA <i class="bi bi-chevron-up chevron__rotate"></i>
+              INDUMENTARIA
+              <img
+                src="./assets/svg/chevron-up.svg"
+                alt="chevron-up"
+                class="chevron__up"
+              />
               <ul>
                 <div>
                   <li class="todo">Todo</li>
@@ -76,22 +81,25 @@
           >
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">LOGO</h5>
-              <img
-                src="assets/svg/x.svg"
+              <i
                 alt="close-button"
-                width="30"
                 type="button"
-                class="btn-close text-reset"
+                class="bi bi-x-lg btn-close text-reset p-0"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              />
+              ></i>
             </div>
             <div class="offcanvas-body">
               <nav class="d-flex align-items-center">
                 <ul class="ul__navbar--mobile m-0 p-0">
                   <li><a href="">HOME</a></li>
                   <li class="li__indumentaria">
-                    INDUMENTARIA +
+                    INDUMENTARIA
+                    <img
+                      src="./assets/svg/chevron-up.svg"
+                      alt="chevron-up"
+                      class="chevron__up"
+                    />
 
                     <ul class="ul__hide ps-4" style="display: none">
                       <li class="todo" data-bs-dismiss="offcanvas">Todo</li>

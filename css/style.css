@@ -47,6 +47,11 @@ header .desktop__header .ul__navbar li:hover ul li:hover {
   background-size: 100% 1px;
 }
 
+header .desktop__header .ul__navbar .li__indumentaria:hover .chevron__up {
+  transform: rotate(180deg);
+  transition: 0.2s;
+}
+
 header .mobile__header {
   display: none;
 }
@@ -78,18 +83,22 @@ header a:hover {
   header .mobile__header .ul__navbar--mobile li {
     margin: 0.5rem 0;
   }
-  header .mobile__header .ul__navbar--mobile .ul__hide {
+  header .mobile__header .ul__navbar--mobile .li__indumentaria .ul__hide {
     list-style: none;
   }
-  header .mobile__header .ul__navbar--mobile .ul__hide li {
+  header .mobile__header .ul__navbar--mobile .li__indumentaria .ul__hide li {
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 1px;
     transition: background-size 0.5s;
   }
-  header .mobile__header .ul__navbar--mobile .ul__hide li:hover {
+  header .mobile__header .ul__navbar--mobile .li__indumentaria .ul__hide li:hover {
     background-size: 100% 1px;
+  }
+  header .mobile__header .ul__navbar--mobile .li__indumentaria:hover .chevron__up {
+    transform: rotate(180deg);
+    transition: 0.2s;
   }
 }
 
