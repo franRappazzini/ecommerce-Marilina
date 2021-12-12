@@ -25,7 +25,10 @@ const productos = [];
 // -----filtra por categoria-----
 function filterCategoria(productos, orderByCategorias, categoria) {
   productos.forEach((p) => {
-    if (p.categoria === categoria || categoria === "Todas") {
+    if (
+      p.categoria.toLowerCase() === categoria.toLowerCase() ||
+      categoria === "Todas"
+    ) {
       orderByCategorias.push(p);
     }
   });
@@ -158,7 +161,7 @@ function loader() {
 
 // -----hace funcionales los selectores de categorias-----
 function btnsCategoria() {
-  $(".todos").click(() => renderizarProductos(productos, "Todas"));
+  $(".todo").click(() => renderizarProductos(productos, "Todas"));
   $(".remeras").click(() => renderizarProductos(productos, "remeras"));
   $(".musculosas").click(() => renderizarProductos(productos, "musculosas"));
   $(".shorts").click(() => renderizarProductos(productos, "shorts"));
