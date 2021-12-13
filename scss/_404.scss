@@ -1,0 +1,44 @@
+.main__404 {
+  //   height: 100vh;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+
+  h1 {
+    font-size: 96px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 64px;
+    }
+
+    h4 {
+      font-size: 24px;
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+
+    .section__img-404 {
+      display: none;
+    }
+  }
+}

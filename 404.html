@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- desktop version, desaparece en mobile version -->
+      <section class="desktop__header justify-content-between container">
+        <h1><a href="index.html">LOGO</a></h1>
+
+        <nav class="d-flex align-items-center">
+          <ul class="ul__navbar d-flex m-0 p-0">
+            <li><a href="">HOME</a></li>
+            <li class="li__indumentaria">
+              INDUMENTARIA
+              <img
+                src="./assets/svg/chevron-up.svg"
+                alt="chevron-up"
+                class="chevron__up"
+              />
+              <ul>
+                <div>
+                  <li class="todo">Todo</li>
+                  <li class="abrigos">Abrigos</li>
+                  <li class="calzas">Calzas</li>
+                  <li class="conjuntos">Conjuntos</li>
+                  <li class="hombres">Hombres</li>
+                </div>
+                <div>
+                  <li class="kids">Kids</li>
+                  <li class="pantalones">Pantalones</li>
+                  <li class="remeras">Remeras</li>
+                  <li class="shorts">Shorts</li>
+                  <li class="tops">Tops</li>
+                </div>
+              </ul>
+            </li>
+            <li><a href="">PREGUNTAS FRECUENTES</a></li>
+            <li><a href="">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- mobile version, desaparece en desktop version -->
+      <section
+        class="
+          mobile__header
+          justify-content-between
+          align-items-center
+          container
+        "
+      >
+        <section>
+          <img
+            src="assets/svg/list.svg"
+            alt="list-icon"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+            width="40"
+          />
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">LOGO</h5>
+              <i
+                alt="close-button"
+                type="button"
+                class="bi bi-x-lg btn-close text-reset p-0"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></i>
+            </div>
+            <div class="offcanvas-body">
+              <nav class="d-flex align-items-center">
+                <ul class="ul__navbar--mobile m-0 p-0">
+                  <li><a href="">HOME</a></li>
+                  <li class="li__indumentaria">
+                    INDUMENTARIA
+                    <img
+                      src="./assets/svg/chevron-up.svg"
+                      alt="chevron-up"
+                      class="chevron__up"
+                    />
+
+                    <ul class="ul__hide ps-4" style="display: none">
+                      <li class="todo" data-bs-dismiss="offcanvas">Todo</li>
+                      <li class="abrigos" data-bs-dismiss="offcanvas">
+                        Abrigos
+                      </li>
+                      <li class="calzas" data-bs-dismiss="offcanvas">Calzas</li>
+                      <li class="conjuntos" data-bs-dismiss="offcanvas">
+                        Conjuntos
+                      </li>
+                      <li class="hombres" data-bs-dismiss="offcanvas">
+                        Hombres
+                      </li>
+                      <li class="kids" data-bs-dismiss="offcanvas">Kids</li>
+                      <li class="pantalones" data-bs-dismiss="offcanvas">
+                        Pantalones
+                      </li>
+                      <li class="remeras" data-bs-dismiss="offcanvas">
+                        Remeras
+                      </li>
+                      <li class="shorts" data-bs-dismiss="offcanvas">Shorts</li>
+                      <li class="tops" data-bs-dismiss="offcanvas">Tops</li>
+                    </ul>
+                  </li>
+                  <li><a href="">PREGUNTAS FRECUENTES</a></li>
+                  <li><a href="">CONTACTO</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </section>
+
+        <h1 class="my-2">LOGO</h1>
+      </section>
+    </header>
+
+    <main class="main__404 mt-5 d-flex justify-content-between container">
+      <section>
+        <h1>¡UPS!</h1>
+
+        <h4>No hemos podido encontrar la página que buscas.</h4>
+
+        <h5>Código de error: 404</h5>
+
+        <p>Posibles motivos por los que la página no esté disponible:</p>
+        <ul>
+          <li>Puede que haya cambiado de dirección (URL) o no existir.</li>
+          <li>
+            Es posible que no se haya escrito correctamente su URL, comprueba
+            nuevamente para ver si es correcta.
+          </li>
+        </ul>
+
+        <a href="./index.html" class="btn btn-primary mt-3"
+          >IR A LA PÁGINA DE INICIO
+        </a>
+      </section>
+
+      <section class="section__img-404">
+        <img src="./assets/svg/404.svg" alt="404" />
+      </section>
+    </main>
+
+    <!-- scripts -->
+    <!-- Font Awesome (logos footer) -->
+    <script
+      src="https://kit.fontawesome.com/c6b5081700.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
