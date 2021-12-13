@@ -128,6 +128,11 @@ main .productos__container .productos .hover__zoom:hover {
   cursor: zoom-out;
 }
 
+main .productos__container .productos .precio__producto {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 main .info {
   margin-top: 7rem;
 }

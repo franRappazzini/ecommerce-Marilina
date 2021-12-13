@@ -128,10 +128,10 @@ function renderizarProductos(productos, categoria) {
                       </section>
 
                       <section class="col-12 col-md-6">
-                        <p>Descripcion: ${p.descripcion}</p>
-                        <p>Precio: $${new Intl.NumberFormat().format(
+                        <p class="precio__producto">$${new Intl.NumberFormat().format(
                           p.precio
                         )}</p>
+                        <p>Descripcion: ${p.descripcion}</p>
                         <p>Categoria: ${p.categoria}</p>
                       </section>
                     </div>
