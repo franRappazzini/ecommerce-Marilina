@@ -133,6 +133,12 @@ main .productos__container .productos .precio__producto {
   font-weight: 600;
 }
 
+main .productos__container .productos .precio__producto--cuotas {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: grey;
+}
+
 main .info {
   margin-top: 7rem;
 }

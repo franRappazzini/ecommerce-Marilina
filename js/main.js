@@ -4,11 +4,22 @@ $(() => {
 });
 
 class Producto {
-  constructor(id, nombre, categoria, precio, descripcion, img1, img2, img3) {
+  constructor(
+    id,
+    nombre,
+    categoria,
+    precio,
+    talle,
+    descripcion,
+    img1,
+    img2,
+    img3
+  ) {
     this.id = id;
     this.nombre = nombre;
     this.categoria = categoria;
     this.precio = precio;
+    this.talle = talle;
     this.descripcion = descripcion;
     this.img1 = img1;
     this.img2 = img2;
@@ -97,19 +108,25 @@ function renderizarProductos(productos, categoria) {
                           </div>
                           <div class="carousel-inner hover__zoom">
                             <div class="carousel-item active">
-                              <img src="${
-                                p.img1
-                              }" class="d-block w-100" alt="...">
+                              <img src="${p.img1}" class="d-block w-100" 
+                                alt="${
+                                  p.nombre
+                                }" style="height: 25rem; object-fit: cover;"
+                              >
                             </div>
                             <div class="carousel-item">
-                              <img src="${
-                                p.img2
-                              }" class="d-block w-100" alt="...">
+                              <img src="${p.img2}" class="d-block w-100" 
+                                alt="${
+                                  p.nombre
+                                }" style="height: 25rem; object-fit: cover;"
+                              >
                             </div>
                             <div class="carousel-item">
-                              <img src="${
-                                p.img3
-                              }" class="d-block w-100" alt="...">
+                              <img src="${p.img3}" class="d-block w-100" 
+                                alt="${
+                                  p.nombre
+                                }" style="height: 25rem; object-fit: cover;"
+                              >
                             </div>
                           </div>
                           <button class="carousel-control-prev" type="button" data-bs-target="#carousel${
@@ -128,21 +145,41 @@ function renderizarProductos(productos, categoria) {
                       </section>
 
                       <section class="col-12 col-md-6">
-                        <p class="precio__producto">$${new Intl.NumberFormat().format(
+                        <p class="precio__producto mb-1">$${new Intl.NumberFormat().format(
                           p.precio
                         )}</p>
+
+                        <p class="precio__producto--cuotas">3 cuotas sin interés de $${new Intl.NumberFormat().format(
+                          Math.ceil((p.precio * 1.3) / 3)
+                        )}</p>
+
                         <p>Descripcion: ${p.descripcion}</p>
+
+                        <p class="m-0">Talles:</p>
+                        ${
+                          p.talle === "Único"
+                            ? `<ul class="d-flex ps-2" style="list-style: none;"><li>${p.talle}</li></ul>`
+                            : `<ul class="d-flex ps-2" style="list-style: none;">
+                                <li class="me-1" >S /</li>
+                                <li class="me-1" >M /</li>
+                                <li class="me-1" >L /</li>
+                                <li class="me-1" >XL</li>
+                              </ul>`
+                        }
+                          
                         <p>Categoria: ${p.categoria}</p>
                       </section>
                     </div>
                     <div class="modal-footer">
-                      <a href="https://wa.me/5493402449859/?text=Hola, cómo estás? Queria saber si te queda stock de ${
-                        p.nombre
-                      } en talle..."
-                      class="btn btn-success"
+                      <a href="https://wa.me/5493402449859/?text=${
+                        p.talle === "Único"
+                          ? `Hola, cómo estás? Queria saber si te queda stock de '${p.nombre}'`
+                          : `Hola, cómo estás? Queria saber si te queda stock de '${p.nombre}' en talle '...'`
+                      }"
+                      class="btn btn-success d-flex align-items-center"
                       target="_blank" rel="noopener noreferrer"
                       >
-                        Consultar stock por WhatsApp
+                      <img src="../assets/svg/whatsapp-white.svg" alt="whatsapp" width="25" class="me-2" /> Consultar stock 
                       </a>
                     </div>
                   </div>
