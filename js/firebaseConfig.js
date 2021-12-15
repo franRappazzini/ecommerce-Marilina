@@ -20,6 +20,7 @@ function getProductos() {
               doc.data().nombre,
               doc.data().categoria,
               doc.data().precio,
+              doc.data().precioCuotas,
               doc.data().talle,
               doc.data().descripcion,
               doc.data().img1,

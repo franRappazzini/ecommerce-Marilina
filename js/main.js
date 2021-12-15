@@ -9,6 +9,7 @@ class Producto {
     nombre,
     categoria,
     precio,
+    precioCuotas,
     talle,
     descripcion,
     img1,
@@ -19,6 +20,7 @@ class Producto {
     this.nombre = nombre;
     this.categoria = categoria;
     this.precio = precio;
+    this.precioCuotas = precioCuotas;
     this.talle = talle;
     this.descripcion = descripcion;
     this.img1 = img1;
@@ -63,12 +65,12 @@ function renderizarProductos(productos, categoria) {
   // orderByCategorias.length > 0 &&
   orderByCategorias.forEach((p) => {
     $(".productos").append(`
-        <article class="col-6 col-md-3 mb-3">
-          <div class="card" style="width: auto;">
+        <article class="col-6 col-md-3 mb-3 d-flex justify-content-center">
+          <div class="card" style="width: 16rem;" >
             <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${
               p.nombre
             }" style="height: 12rem; object-fit: cover;">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column justify-content-between align-items-start">
               <h5 class="card-title">${p.nombre}</h5>
               <p class="card-text">${p.descripcion}</p>
 
@@ -150,7 +152,7 @@ function renderizarProductos(productos, categoria) {
                         )}</p>
 
                         <p class="precio__producto--cuotas">3 cuotas sin interés de $${new Intl.NumberFormat().format(
-                          Math.ceil((p.precio * 1.3) / 3)
+                          Math.ceil(p.precioCuotas / 3)
                         )}</p>
 
                         <p>Descripcion: ${p.descripcion}</p>
@@ -220,3 +222,11 @@ function btnsCategoria() {
 
 // --------------------------------------------------
 $(".li__indumentaria").click(() => $(".ul__hide").toggle("fast"));
+
+// const activePage = window.location.pathname;
+// const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+//   if (link.href.includes(`${activePage}`)) {
+//     link.classList.add("activeLink");
+//     console.log(link);
+//   }
+// });

@@ -1,6 +1,7 @@
 header {
   background-color: black;
   color: white;
+  font-family: "Roboto", sans-serif;
   position: sticky;
   top: 0;
   z-index: 101;
@@ -112,6 +113,8 @@ header {
 
 main {
   background-color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
 
   .carousel__container {
     img {
