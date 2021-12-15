@@ -70,9 +70,12 @@ function renderizarProductos(productos, categoria) {
             <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${
               p.nombre
             }" style="height: 12rem; object-fit: cover;">
-            <div class="card-body d-flex flex-column justify-content-between align-items-start">
-              <h5 class="card-title">${p.nombre}</h5>
-              <p class="card-text">${p.descripcion}</p>
+            <div class="card-body d-flex flex-column justify-content-between align-items-center">
+              <h5 class="card-title text-center">${p.nombre}</h5>
+              <p class="card-text text-center">$${p.precio}</p>
+              <p class="precio__producto--cuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$${new Intl.NumberFormat().format(
+                Math.ceil(p.precioCuotas / 3)
+              )}</strong></p>
 
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${
                 p.id
@@ -146,43 +149,56 @@ function renderizarProductos(productos, categoria) {
                         </div>
                       </section>
 
-                      <section class="col-12 col-md-6">
-                        <p class="precio__producto mb-1">$${new Intl.NumberFormat().format(
-                          p.precio
-                        )}</p>
+                      <section class="col-12 col-md-6 d-flex flex-column justify-content-between">
+                        <section>
+                          <p class="precio__producto m-0">$${new Intl.NumberFormat().format(
+                            p.precio
+                          )}</p>
 
-                        <p class="precio__producto--cuotas">3 cuotas sin interés de $${new Intl.NumberFormat().format(
-                          Math.ceil(p.precioCuotas / 3)
-                        )}</p>
+                          <p class="precio__producto--cuotas m-0"><strong>3</strong> cuotas sin interés de <strong>$${new Intl.NumberFormat().format(
+                            Math.ceil(p.precioCuotas / 3)
+                          )}</strong></p>
 
-                        <p>Descripcion: ${p.descripcion}</p>
+                          <div class="formas-pago__container d-flex align-items-center mb-3">
+                            <img src="../assets/svg/card.svg" alt="card-icon" width="15" />
+                            <p class="m-0 ms-2">Todas las formas de pago</p>
+                          </div>
 
-                        <p class="m-0">Talles:</p>
-                        ${
-                          p.talle === "Único"
-                            ? `<ul class="d-flex ps-2" style="list-style: none;"><li>${p.talle}</li></ul>`
-                            : `<ul class="d-flex ps-2" style="list-style: none;">
-                                <li class="me-1" >S /</li>
-                                <li class="me-1" >M /</li>
-                                <li class="me-1" >L /</li>
-                                <li class="me-1" >XL</li>
-                              </ul>`
-                        }
-                          
-                        <p>Categoria: ${p.categoria}</p>
+                          <hr/>
+
+                          <p class="m-0 titles__descripcion">Descripcion:</p>
+                          <p class="ms-2">${p.descripcion}</p>
+
+                          <hr/>
+
+                          <p class="m-0 titles__descripcion">Talles:</p>
+                          ${
+                            p.talle === "Único"
+                              ? `<ul class="d-flex ps-2" style="list-style: none;"><li>${p.talle}</li></ul>`
+                              : `<ul class="d-flex ps-2" style="list-style: none;">
+                                  <li class="me-1" >S /</li>
+                                  <li class="me-1" >M /</li>
+                                  <li class="me-1" >L /</li>
+                                  <li class="me-1" >XL</li>
+                                </ul>`
+                          }
+                        </section>
+
+                        <div>
+                          <a href="https://wa.me/5493402449859/?text=${
+                            p.talle === "Único"
+                              ? `Hola, cómo estás? Queria saber si te queda stock de '${p.nombre}'`
+                              : `Hola, cómo estás? Queria saber si te queda stock de '${p.nombre}' en talle '...'`
+                          }"
+                          class="btn btn-success d-flex justify-content-center align-items-center"
+                          target="_blank" rel="noopener noreferrer"
+                          >
+                            <img src="../assets/svg/whatsapp-white.svg" alt="whatsapp" width="25" class="me-2" /> Consultar stock 
+                          </a>
+                          <p class="text-center mb-0 mt-2">¡Envíos a todo</p>
+                          <p class="text-center m-0">el país!</p>
+                        </div>
                       </section>
-                    </div>
-                    <div class="modal-footer">
-                      <a href="https://wa.me/5493402449859/?text=${
-                        p.talle === "Único"
-                          ? `Hola, cómo estás? Queria saber si te queda stock de '${p.nombre}'`
-                          : `Hola, cómo estás? Queria saber si te queda stock de '${p.nombre}' en talle '...'`
-                      }"
-                      class="btn btn-success d-flex align-items-center"
-                      target="_blank" rel="noopener noreferrer"
-                      >
-                      <img src="../assets/svg/whatsapp-white.svg" alt="whatsapp" width="25" class="me-2" /> Consultar stock 
-                      </a>
                     </div>
                   </div>
                 </div>

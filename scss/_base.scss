@@ -136,20 +136,46 @@ main {
 
     .productos {
       .hover__zoom:hover {
-        transform: scale(1.5);
+        transform: scale(1.3);
         transition: 0.5s;
         cursor: zoom-out;
       }
 
-      .precio__producto {
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
+      article {
+        .card {
+          &:hover {
+            box-shadow: 0 0 10px rgb(199, 199, 199);
+          }
 
-      .precio__producto--cuotas {
-        font-size: 0.9rem;
-        font-weight: 500;
-        color: grey;
+          .card-title {
+            font-weight: 500;
+          }
+
+          .card-text {
+            font-weight: 500;
+            font-size: 18px;
+          }
+
+          .precio__producto--cuotas {
+            font-weight: 500;
+            color: grey;
+          }
+
+          .modal {
+            .precio__producto {
+              font-size: 30px;
+              font-weight: 600;
+            }
+
+            .formas-pago__container {
+              font-size: 0.9rem;
+            }
+
+            .titles__descripcion {
+              font-weight: 500;
+            }
+          }
+        }
       }
     }
   }
