@@ -179,7 +179,8 @@ function renderizarProductos(productos, categoria) {
                                   <li class="me-1" >S /</li>
                                   <li class="me-1" >M /</li>
                                   <li class="me-1" >L /</li>
-                                  <li class="me-1" >XL</li>
+                                  <li class="me-1" >XL /</li>
+                                  <li class="me-1" >XXL</li>
                                 </ul>`
                           }
                         </section>
