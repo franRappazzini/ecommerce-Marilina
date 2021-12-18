@@ -21,6 +21,15 @@ header .desktop__header .ul__navbar {
 header .desktop__header .ul__navbar li {
   margin: 0 0.5rem;
   cursor: pointer;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.5s;
+}
+
+header .desktop__header .ul__navbar li:hover {
+  background-size: 100% 1px;
 }
 
 header .desktop__header .ul__navbar li ul {
@@ -237,6 +246,9 @@ main .item-fixed img {
 
 footer {
   background-color: black;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 footer ul {
@@ -255,7 +267,7 @@ footer ul li a {
   color: white;
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
-  background-position: 0% 100%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 0% 1px;
   transition: background-size 0.5s;
@@ -267,6 +279,9 @@ footer ul li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  footer {
+    height: fit-content;
+  }
   footer ul {
     flex-direction: column;
     align-items: center;
