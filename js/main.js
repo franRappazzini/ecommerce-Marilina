@@ -228,52 +228,52 @@ function btnsCategoria() {
   const activePage = window.location.pathname;
 
   $(".todo").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "Todas")
       : (window.location.href = "./index.html");
   });
   $(".abrigos").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "abrigos")
       : (window.location.href = "./index.html");
   });
   $(".calzas").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "calzas")
       : (window.location.href = "./index.html");
   });
   $(".conjuntos").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "conjuntos")
       : (window.location.href = "./index.html");
   });
   $(".hombres").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "hombres")
       : (window.location.href = "./index.html");
   });
   $(".kids").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "kids")
       : (window.location.href = "./index.html");
   });
   $(".pantalones").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "pantalones")
       : (window.location.href = "./index.html");
   });
   $(".remeras").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "remeras")
       : (window.location.href = "./index.html");
   });
   $(".shorts").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "shorts")
       : (window.location.href = "./index.html");
   });
   $(".tops").click(() => {
-    activePage === "/index.html"
+    activePage === "/index.html" || activePage === "/"
       ? renderizarProductos(productos, "tops")
       : (window.location.href = "./index.html");
   });
