@@ -176,12 +176,18 @@ main .productos__container .productos article .card .card-text {
 
 main .productos__container .productos article .card .precio__producto--cuotas {
   font-weight: 500;
-  color: grey;
+  color: white;
+  background-color: black;
 }
 
 main .productos__container .productos article .card .modal .precio__producto {
   font-size: 30px;
   font-weight: 600;
+}
+
+main .productos__container .productos article .card .modal .precio__producto--cuotas2 {
+  font-weight: 500;
+  color: grey;
 }
 
 main .productos__container .productos article .card .modal .formas-pago__container {

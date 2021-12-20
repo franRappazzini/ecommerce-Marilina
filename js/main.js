@@ -30,6 +30,7 @@ class Producto {
 }
 
 const productos = [];
+const imgCarousel = [];
 
 /**
  * FUNCTIONS
@@ -70,14 +71,14 @@ function renderizarProductos(productos, categoria) {
             <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${
               p.nombre
             }" style="height: 12rem; object-fit: cover;">
-            <div class="card-body d-flex flex-column justify-content-between align-items-center">
+            <div class="card-body d-flex flex-column justify-content-between">
               <h5 class="card-title text-center">${p.nombre}</h5>
               <p class="card-text text-center">$${p.precio}</p>
-              <p class="precio__producto--cuotas text-center"><strong>3</strong> cuotas sin interés de <strong>$${new Intl.NumberFormat().format(
+              <p class="precio__producto--cuotas text-center mb-1"><strong>3</strong> cuotas sin interés de <strong>$${new Intl.NumberFormat().format(
                 Math.ceil(p.precioCuotas / 3)
               )}</strong></p>
 
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal${
                 p.id
               }">
                 Ver más
@@ -155,7 +156,7 @@ function renderizarProductos(productos, categoria) {
                             p.precio
                           )}</p>
 
-                          <p class="precio__producto--cuotas m-0"><strong>3</strong> cuotas sin interés de <strong>$${new Intl.NumberFormat().format(
+                          <p class="precio__producto--cuotas2 m-0"><strong>3</strong> cuotas sin interés de <strong>$${new Intl.NumberFormat().format(
                             Math.ceil(p.precioCuotas / 3)
                           )}</strong></p>
 

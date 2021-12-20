@@ -186,13 +186,19 @@ main {
 
           .precio__producto--cuotas {
             font-weight: 500;
-            color: grey;
+            color: white;
+            background-color: black;
           }
 
           .modal {
             .precio__producto {
               font-size: 30px;
               font-weight: 600;
+            }
+
+            .precio__producto--cuotas2 {
+              font-weight: 500;
+              color: grey;
             }
 
             .formas-pago__container {

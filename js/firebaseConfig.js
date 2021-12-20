@@ -34,3 +34,5 @@ function getProductos() {
     .then(() => renderizarProductos(productos, "Todas"))
     .catch((err) => console.log(`ERROR: ${err}`));
 }
+
+// CREAR GET CAROUSEL
