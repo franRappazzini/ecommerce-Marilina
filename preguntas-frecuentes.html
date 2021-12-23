@@ -65,9 +65,12 @@
           justify-content-between
           align-items-center
           container
+          row
+          m-0
+          px-2
         "
       >
-        <section>
+        <section class="col-4 p-0 justify-content-start">
           <img
             src="assets/svg/list.svg"
             alt="list-icon"
@@ -83,8 +86,14 @@
             id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel"
           >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">LOGO</h5>
+            <div
+              class="offcanvas-header"
+              class="offcanvas-title"
+              id="offcanvasExampleLabel"
+            >
+              <a href="index.html"
+                ><img src="./assets/img/logo.png" alt="logo" width="60"
+              /></a>
               <i
                 alt="close-button"
                 type="button"
@@ -140,7 +149,11 @@
           </div>
         </section>
 
-        <h1 class="my-2">LOGO</h1>
+        <a href="index.html" class="col-4 p-0 d-flex justify-content-center"
+          ><img src="./assets/img/logo.png" alt="logo" width="70"
+        /></a>
+
+        <div class="col-4 p-0"></div>
       </section>
     </header>
 
@@ -168,7 +181,7 @@
             <li class="li__for-mobile">
               <img
                 class="img-preguntas"
-                src="./assets/img/como-comprar.png"
+                src="./assets/svg/como-comprar.svg"
                 alt="como-comprar"
               />
 
@@ -201,7 +214,7 @@
             <li class="li__for-mobile">
               <img
                 class="img-preguntas"
-                src="./assets/img/medios-pago.png"
+                src="./assets/svg/medios-pago.svg"
                 alt="medios-pago"
               />
               <img
@@ -299,22 +312,41 @@
           </ul>
         </section>
       </section>
+
+      <!-- Logo WhatsApp -->
+      <div class="item-fixed container">
+        <a
+          href="https://wa.me/5493402449859?text=Hola, cómo estás? Queria consultarte por una prenda que vi en el sitio web"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/svg/whatsapp.svg" alt="logo de WhatsApp"
+        /></a>
+      </div>
     </main>
 
     <footer>
       <ul class="container">
         <li>
-          <a href="https://www.instagram.com/ropadeportiva_mf/?hl=es-la"
+          <a
+            href="https://www.instagram.com/ropadeportiva_mf/?hl=es-la"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-instagram"></i> ropadeportiva_mf</a
           >
         </li>
         <li>
-          <a href="https://goo.gl/maps/A44rshH9tYgrhWUJA"
+          <a
+            href="https://goo.gl/maps/W82HUvuHyDCyhAqX8"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fas fa-map-marker-alt"></i> Showroom - Rosario Centro</a
           >
         </li>
         <li>
-          <a href="https://wa.link/988yaj"
+          <a
+            href="https://wa.me/5493402449859?text=Hola, cómo estás? Queria consultarte por una prenda que vi en el sitio web"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-whatsapp"></i> (3402) 44-9859</a
           >
         </li>
@@ -334,21 +366,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script>
-      const firebaseConfig = {
-        apiKey: "AIzaSyAHJtu7kxN_bRpDQMqvB--AMcQNtYd3-kE",
-        authDomain: "prueba-104e5.firebaseapp.com",
-        projectId: "prueba-104e5",
-        storageBucket: "prueba-104e5.appspot.com",
-        messagingSenderId: "799653477259",
-        appId: "1:799653477259:web:339c78ddf189271c97cd8e",
-      };
-
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="js/firebaseConfig.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

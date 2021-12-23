@@ -397,7 +397,6 @@ footer ul li a:hover {
 }
 
 .contacto {
-  margin: 50px 50px 150px 50px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;

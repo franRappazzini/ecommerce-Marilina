@@ -65,9 +65,12 @@
           justify-content-between
           align-items-center
           container
+          row
+          m-0
+          px-2
         "
       >
-        <section>
+        <section class="col-4 p-0 justify-content-start">
           <img
             src="assets/svg/list.svg"
             alt="list-icon"
@@ -83,8 +86,14 @@
             id="offcanvasExample"
             aria-labelledby="offcanvasExampleLabel"
           >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">LOGO</h5>
+            <div
+              class="offcanvas-header"
+              class="offcanvas-title"
+              id="offcanvasExampleLabel"
+            >
+              <a href="index.html"
+                ><img src="./assets/img/logo.png" alt="logo" width="60"
+              /></a>
               <i
                 alt="close-button"
                 type="button"
@@ -140,62 +149,121 @@
           </div>
         </section>
 
-        <h1 class="my-2">LOGO</h1>
+        <a href="index.html" class="col-4 p-0 d-flex justify-content-center"
+          ><img src="./assets/img/logo.png" alt="logo" width="70"
+        /></a>
+
+        <div class="col-4 p-0"></div>
       </section>
     </header>
 
-    <main class="contacto">
-
-      <div class="titulos-contacto">
+    <main class="contacto container my-4">
+      <section class="titulos-contacto">
         <h1>¡CONTACTO!</h1>
         <h2>Ante cualquier duda consultanos</h2>
-      </div>
+      </section>
 
-      <div class="redes">
-        <div class="whatsapp">
-          <svg width="11" height="143" viewBox="0 0 11 143" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="11" height="143" rx="5.5" fill="#E5E5E5"/>
-          </svg>  
-          <a href="https://wa.link/988yaj">
-          <ul>
-            <li><img src="./assets/svg/logo-wpp-contacto.svg" alt=""></li>
-            <li><h3>WhatsApp</h3></li>
-            <li>(3402) 44-9859</li>
-          </ul>
+      <section class="redes">
+        <section class="whatsapp">
+          <svg
+            width="11"
+            height="143"
+            viewBox="0 0 11 143"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="11" height="143" rx="5.5" fill="#E5E5E5" />
+          </svg>
+          <a
+            href="https://wa.me/5493402449859?text=Hola, cómo estás? Queria consultarte por una prenda que vi en el sitio web"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ul>
+              <li><img src="./assets/svg/logo-wpp-contacto.svg" alt="" /></li>
+              <li><h3>WhatsApp</h3></li>
+              <li>(3402) 44-9859</li>
+            </ul>
           </a>
-        </div>
+        </section>
 
-        <hr>
+        <hr />
 
-        <div class="instagram">
-          <svg width="11" height="143" viewBox="0 0 11 143" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="11" height="143" rx="5.5" fill="#E5E5E5"/>
-          </svg> 
-          <a href="https://www.instagram.com/ropadeportiva_mf/?hl=es-la">
-          <ul>
-            <li><img src="./assets/svg/logo-ig-contacto.svg" alt=""></li>
-            <li><h3>Instagram</h3></li>
-            <li>@ropadeportiva_mf</li>
-          </ul>
+        <section class="instagram">
+          <svg
+            width="11"
+            height="143"
+            viewBox="0 0 11 143"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="11" height="143" rx="5.5" fill="#E5E5E5" />
+          </svg>
+          <a
+            href="https://www.instagram.com/ropadeportiva_mf/?hl=es-la"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ul>
+              <li><img src="./assets/svg/logo-ig-contacto.svg" alt="" /></li>
+              <li><h3>Instagram</h3></li>
+              <li>@ropadeportiva_mf</li>
+            </ul>
           </a>
-        </div>
+        </section>
+      </section>
+
+      <section class="info container">
+        <ul>
+          <li>
+            <img src="./assets/svg/car.svg" alt="car-logo" />
+            <p>¡Envíos a todo el país!</p>
+          </li>
+          <li>
+            <img src="./assets/svg/card.svg" alt="card-logo" />
+            <p>Todos los medios de pago</p>
+          </li>
+          <li>
+            <img src="./assets/svg/whatsapp-black.svg" alt="whatsapp-logo" />
+            <p>¡Hablanos por WhatsApp!</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Logo WhatsApp -->
+      <div class="item-fixed container">
+        <a
+          href="https://wa.me/5493402449859?text=Hola, cómo estás? Queria consultarte por una prenda que vi en el sitio web"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="./assets/svg/whatsapp.svg" alt="logo de WhatsApp"
+        /></a>
       </div>
     </main>
 
     <footer>
       <ul class="container">
         <li>
-          <a href="https://www.instagram.com/ropadeportiva_mf/?hl=es-la"
+          <a
+            href="https://www.instagram.com/ropadeportiva_mf/?hl=es-la"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-instagram"></i> ropadeportiva_mf</a
           >
         </li>
         <li>
-          <a href="https://goo.gl/maps/A44rshH9tYgrhWUJA"
+          <a
+            href="https://goo.gl/maps/W82HUvuHyDCyhAqX8"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fas fa-map-marker-alt"></i> Showroom - Rosario Centro</a
           >
         </li>
         <li>
-          <a href="https://wa.link/988yaj"
+          <a
+            href="https://wa.me/5493402449859?text=Hola, cómo estás? Queria consultarte por una prenda que vi en el sitio web"
+            target="_blank"
+            rel="noopener noreferrer"
             ><i class="fab fa-whatsapp"></i> (3402) 44-9859</a
           >
         </li>
@@ -215,21 +283,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <script>
-      const firebaseConfig = {
-        apiKey: "AIzaSyAHJtu7kxN_bRpDQMqvB--AMcQNtYd3-kE",
-        authDomain: "prueba-104e5.firebaseapp.com",
-        projectId: "prueba-104e5",
-        storageBucket: "prueba-104e5.appspot.com",
-        messagingSenderId: "799653477259",
-        appId: "1:799653477259:web:339c78ddf189271c97cd8e",
-      };
-
-      firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="js/firebaseConfig.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
