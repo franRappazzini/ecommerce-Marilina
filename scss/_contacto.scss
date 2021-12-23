@@ -1,0 +1,41 @@
+.contacto {
+  margin: 50px 50px 150px 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .titulos-contacto {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 170%;
+    }
+
+    h2 {
+      font-size: 140%;
+      color: grey;
+    }
+  }
+
+  .redes {
+    align-items: center;
+    text-decoration: none;
+
+    .whatsapp,
+    .instagram {
+      display: flex;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      ul {
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

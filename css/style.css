@@ -9,12 +9,15 @@ header {
   top: 0;
   z-index: 101;
 }
+
 header .desktop__header {
   display: flex;
 }
+
 header .desktop__header .ul__navbar {
   list-style: none;
 }
+
 header .desktop__header .ul__navbar li {
   margin: 0 0.5rem;
   cursor: pointer;
@@ -24,12 +27,15 @@ header .desktop__header .ul__navbar li {
   background-size: 0% 1px;
   transition: background-size 0.5s;
 }
+
 header .desktop__header .ul__navbar li:hover {
   background-size: 100% 1px;
 }
+
 header .desktop__header .ul__navbar li ul {
   display: none;
 }
+
 header .desktop__header .ul__navbar li:hover ul {
   display: flex;
   position: absolute;
@@ -38,6 +44,7 @@ header .desktop__header .ul__navbar li:hover ul {
   padding: 1rem 0 0 0;
   background-color: black;
 }
+
 header .desktop__header .ul__navbar li:hover ul li {
   width: min-content;
   margin: 0.5rem;
@@ -47,27 +54,34 @@ header .desktop__header .ul__navbar li:hover ul li {
   background-size: 0% 1px;
   transition: background-size 0.5s;
 }
+
 header .desktop__header .ul__navbar li:hover ul li:hover {
   background-size: 100% 1px;
 }
+
 header .desktop__header .ul__navbar .li__indumentaria:hover .chevron__up {
   transform: rotate(180deg);
   transition: 0.2s;
 }
+
 header .mobile__header {
   display: none;
 }
+
 header .mobile__header .offcanvas {
   width: 70%;
   background-color: black;
 }
+
 header a {
   color: white;
   text-decoration: none;
 }
+
 header a:hover {
   color: white;
 }
+
 @media only screen and (max-width: 768px) {
   header .desktop__header {
     display: none;
@@ -105,99 +119,123 @@ main {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
+
 main h1 {
   font-weight: bold;
 }
+
 main .carousel__container img {
   max-height: 300px;
   object-fit: cover;
 }
+
 main .productos__container .title__productos {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
 main .productos__container .ul__categorias {
   justify-content: center;
   list-style: none;
   overflow-x: scroll;
 }
+
 main .productos__container .ul__categorias::-webkit-scrollbar {
   display: none;
 }
+
 main .productos__container .ul__categorias li {
   font-size: 14px;
   padding: 0.5rem 0;
   cursor: pointer;
 }
+
 main .productos__container .ul__categorias li:hover {
   font-weight: 600;
 }
-main .productos__container .ul__categorias li:nth-child(-n+9)::after {
+
+main .productos__container .ul__categorias li:nth-child(-n + 9)::after {
   content: "|";
   margin: 0 0.5rem;
 }
+
 main .productos__container .productos .hover__zoom:hover {
   transform: scale(1.3);
   transition: 0.5s;
   cursor: zoom-out;
 }
+
 main .productos__container .productos article .card:hover {
   box-shadow: 0 0 10px #c7c7c7;
 }
+
 main .productos__container .productos article .card .card-title {
   font-weight: 500;
 }
+
 main .productos__container .productos article .card .card-text {
   font-weight: 500;
   font-size: 18px;
 }
+
 main .productos__container .productos article .card .precio__producto--cuotas {
   font-weight: 500;
   color: white;
   background-color: black;
 }
+
 main .productos__container .productos article .card .modal .precio__producto {
   font-size: 30px;
   font-weight: 600;
 }
+
 main .productos__container .productos article .card .modal .precio__producto--cuotas2 {
   font-weight: 500;
   color: grey;
 }
+
 main .productos__container .productos article .card .modal .formas-pago__container {
   font-size: 0.9rem;
 }
+
 main .productos__container .productos article .card .modal .titles__descripcion {
   font-weight: 500;
 }
+
 main .info {
   margin-top: 7rem;
 }
+
 main .info ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding: 0rem;
 }
+
 main .info ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
+
 main .info ul li p {
   text-align: center;
   font-size: 20px;
 }
+
 main .item-fixed {
   position: fixed;
   bottom: 3%;
   right: 0;
   width: min-content;
 }
+
 main .item-fixed img {
   width: 4rem;
 }
+
 @media only screen and (max-width: 768px) {
   main .productos__container .ul__categorias {
     justify-content: flex-start;
@@ -222,6 +260,7 @@ footer {
   display: flex;
   align-items: center;
 }
+
 footer ul {
   list-style: none;
   margin: 0;
@@ -229,9 +268,11 @@ footer ul {
   justify-content: space-between;
   padding: 0.5rem 0;
 }
+
 footer ul li {
   font-size: 20px;
 }
+
 footer ul li a {
   color: white;
   text-decoration: none;
@@ -241,10 +282,12 @@ footer ul li a {
   background-size: 0% 1px;
   transition: background-size 0.5s;
 }
+
 footer ul li a:hover {
   background-size: 100% 1px;
   color: white;
 }
+
 @media only screen and (max-width: 768px) {
   footer {
     height: fit-content;
@@ -258,41 +301,99 @@ footer ul li a:hover {
   }
 }
 
-.preguntas-frecuentes {
-  margin: 50px 50px 150px 50px;
-}
 .preguntas-frecuentes h1 {
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  font-size: 170%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 30px;
 }
+
 .preguntas-frecuentes .preguntas {
   align-items: center;
   text-decoration: none;
 }
-.preguntas-frecuentes .preguntas .primera, .preguntas-frecuentes .preguntas .segunda, .preguntas-frecuentes .preguntas .tercera, .preguntas-frecuentes .preguntas .cuarta, .preguntas-frecuentes .preguntas .quinta, .preguntas-frecuentes .preguntas .sexta {
+
+.preguntas-frecuentes .preguntas .primera,
+.preguntas-frecuentes .preguntas .segunda,
+.preguntas-frecuentes .preguntas .tercera,
+.preguntas-frecuentes .preguntas .cuarta,
+.preguntas-frecuentes .preguntas .quinta,
+.preguntas-frecuentes .preguntas .sexta {
   display: flex;
 }
-.preguntas-frecuentes .preguntas .primera ul, .preguntas-frecuentes .preguntas .segunda ul, .preguntas-frecuentes .preguntas .tercera ul, .preguntas-frecuentes .preguntas .cuarta ul, .preguntas-frecuentes .preguntas .quinta ul, .preguntas-frecuentes .preguntas .sexta ul {
+
+.preguntas-frecuentes .preguntas .primera ul,
+.preguntas-frecuentes .preguntas .segunda ul,
+.preguntas-frecuentes .preguntas .tercera ul,
+.preguntas-frecuentes .preguntas .cuarta ul,
+.preguntas-frecuentes .preguntas .quinta ul,
+.preguntas-frecuentes .preguntas .sexta ul {
   list-style: none;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: black;
+  padding-left: 1rem;
 }
-.preguntas-frecuentes .preguntas .primera ul li h2, .preguntas-frecuentes .preguntas .segunda ul li h2, .preguntas-frecuentes .preguntas .tercera ul li h2, .preguntas-frecuentes .preguntas .cuarta ul li h2, .preguntas-frecuentes .preguntas .quinta ul li h2, .preguntas-frecuentes .preguntas .sexta ul li h2 {
+
+.preguntas-frecuentes .preguntas .primera ul li h2,
+.preguntas-frecuentes .preguntas .segunda ul li h2,
+.preguntas-frecuentes .preguntas .tercera ul li h2,
+.preguntas-frecuentes .preguntas .cuarta ul li h2,
+.preguntas-frecuentes .preguntas .quinta ul li h2,
+.preguntas-frecuentes .preguntas .sexta ul li h2 {
   margin-top: 5px;
   font-weight: bold;
   font-size: 140%;
 }
-.preguntas-frecuentes .preguntas .primera ul li h3, .preguntas-frecuentes .preguntas .segunda ul li h3, .preguntas-frecuentes .preguntas .tercera ul li h3, .preguntas-frecuentes .preguntas .cuarta ul li h3, .preguntas-frecuentes .preguntas .quinta ul li h3, .preguntas-frecuentes .preguntas .sexta ul li h3 {
+
+.preguntas-frecuentes .preguntas .primera ul li h3,
+.preguntas-frecuentes .preguntas .segunda ul li h3,
+.preguntas-frecuentes .preguntas .tercera ul li h3,
+.preguntas-frecuentes .preguntas .cuarta ul li h3,
+.preguntas-frecuentes .preguntas .quinta ul li h3,
+.preguntas-frecuentes .preguntas .sexta ul li h3 {
   font-size: 110%;
   color: gray;
 }
-.preguntas-frecuentes .preguntas .primera ul li .img-preguntas, .preguntas-frecuentes .preguntas .segunda ul li .img-preguntas, .preguntas-frecuentes .preguntas .tercera ul li .img-preguntas, .preguntas-frecuentes .preguntas .cuarta ul li .img-preguntas, .preguntas-frecuentes .preguntas .quinta ul li .img-preguntas, .preguntas-frecuentes .preguntas .sexta ul li .img-preguntas {
+
+.preguntas-frecuentes .preguntas .primera ul li .img-preguntas,
+.preguntas-frecuentes .preguntas .segunda ul li .img-preguntas,
+.preguntas-frecuentes .preguntas .tercera ul li .img-preguntas,
+.preguntas-frecuentes .preguntas .cuarta ul li .img-preguntas,
+.preguntas-frecuentes .preguntas .quinta ul li .img-preguntas,
+.preguntas-frecuentes .preguntas .sexta ul li .img-preguntas {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.preguntas-frecuentes .preguntas .primera ul li .img-preguntas-mobile,
+.preguntas-frecuentes .preguntas .segunda ul li .img-preguntas-mobile,
+.preguntas-frecuentes .preguntas .tercera ul li .img-preguntas-mobile,
+.preguntas-frecuentes .preguntas .cuarta ul li .img-preguntas-mobile,
+.preguntas-frecuentes .preguntas .quinta ul li .img-preguntas-mobile,
+.preguntas-frecuentes .preguntas .sexta ul li .img-preguntas-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .preguntas-frecuentes h1 {
+    font-size: 15px;
+  }
+  .preguntas-frecuentes .preguntas .primera ul li .img-preguntas {
+    display: none;
+  }
+  .preguntas-frecuentes .preguntas .primera ul li .img-preguntas-mobile {
+    display: block;
+    width: 100%;
+  }
+  .preguntas-frecuentes .preguntas .segunda ul li .img-preguntas {
+    display: none;
+  }
+  .preguntas-frecuentes .preguntas .segunda ul li .img-preguntas-mobile {
+    display: block;
+    width: 100%;
+  }
 }
 
 .contacto {
@@ -301,29 +402,39 @@ footer ul li a:hover {
   align-items: flex-start;
   flex-direction: column;
 }
+
 .contacto .titulos-contacto {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
+
 .contacto .titulos-contacto h1 {
   font-size: 170%;
 }
+
 .contacto .titulos-contacto h2 {
   font-size: 140%;
   color: grey;
 }
+
 .contacto .redes {
   align-items: center;
   text-decoration: none;
 }
-.contacto .redes .whatsapp, .contacto .redes .instagram {
+
+.contacto .redes .whatsapp,
+.contacto .redes .instagram {
   display: flex;
 }
-.contacto .redes .whatsapp a, .contacto .redes .instagram a {
+
+.contacto .redes .whatsapp a,
+.contacto .redes .instagram a {
   text-decoration: none;
   color: black;
 }
-.contacto .redes .whatsapp ul, .contacto .redes .instagram ul {
+
+.contacto .redes .whatsapp ul,
+.contacto .redes .instagram ul {
   list-style: none;
   flex-direction: column;
   align-items: center;
@@ -333,23 +444,28 @@ footer ul li a:hover {
   color: black;
   font-family: "Montserrat", sans-serif;
 }
+
 .main__404 h1 {
   font-size: 96px;
   font-weight: 900;
   text-align: center;
 }
+
 .main__404 h4 {
   font-size: 36px;
   font-weight: 500;
 }
+
 .main__404 h5 {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 2rem;
 }
+
 .main__404 p {
   font-weight: bold;
 }
+
 @media only screen and (max-width: 900px) {
   .main__404 h1 {
     font-size: 64px;
@@ -364,5 +480,4 @@ footer ul li a:hover {
     display: none;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
