@@ -9,9 +9,8 @@ const db = firebase.firestore();
 // -----obtiene los productos de firebasae-----
 function getProductos() {
   db.collection("productos")
-    .limit()
     .get()
-    .then((res) => {
+    .then((res) =>
       productos.push(
         ...res.docs.map(
           (doc) =>
@@ -28,11 +27,22 @@ function getProductos() {
               doc.data().img3
             )
         )
-      );
-      console.log(productos);
-    })
+      )
+    )
     .then(() => renderizarProductos(productos, "Todas"))
     .catch((err) => console.log(`ERROR: ${err}`));
 }
 
-// CREAR GET CAROUSEL
+// -----obtiene las img para el carousel-----
+function getImgCarousel() {
+  db.collection("carousel")
+    .get()
+    .then((res) =>
+      imgCarousel.push(
+        ...res.docs.map((doc) => {
+          doc.id, doc.data().link, doc.data().number;
+        })
+      )
+    )
+    .catch((err) => console.log(`ERROR: ${err}`));
+}
