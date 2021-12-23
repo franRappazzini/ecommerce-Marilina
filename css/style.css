@@ -258,6 +258,43 @@ footer ul li a:hover {
   }
 }
 
+.preguntas-frecuentes {
+  margin: 50px 50px 150px 50px;
+}
+.preguntas-frecuentes h1 {
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  font-size: 170%;
+}
+.preguntas-frecuentes .preguntas {
+  align-items: center;
+  text-decoration: none;
+}
+.preguntas-frecuentes .preguntas .primera, .preguntas-frecuentes .preguntas .segunda, .preguntas-frecuentes .preguntas .tercera, .preguntas-frecuentes .preguntas .cuarta, .preguntas-frecuentes .preguntas .quinta, .preguntas-frecuentes .preguntas .sexta {
+  display: flex;
+}
+.preguntas-frecuentes .preguntas .primera ul, .preguntas-frecuentes .preguntas .segunda ul, .preguntas-frecuentes .preguntas .tercera ul, .preguntas-frecuentes .preguntas .cuarta ul, .preguntas-frecuentes .preguntas .quinta ul, .preguntas-frecuentes .preguntas .sexta ul {
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+.preguntas-frecuentes .preguntas .primera ul li h2, .preguntas-frecuentes .preguntas .segunda ul li h2, .preguntas-frecuentes .preguntas .tercera ul li h2, .preguntas-frecuentes .preguntas .cuarta ul li h2, .preguntas-frecuentes .preguntas .quinta ul li h2, .preguntas-frecuentes .preguntas .sexta ul li h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 140%;
+}
+.preguntas-frecuentes .preguntas .primera ul li h3, .preguntas-frecuentes .preguntas .segunda ul li h3, .preguntas-frecuentes .preguntas .tercera ul li h3, .preguntas-frecuentes .preguntas .cuarta ul li h3, .preguntas-frecuentes .preguntas .quinta ul li h3, .preguntas-frecuentes .preguntas .sexta ul li h3 {
+  font-size: 110%;
+  color: gray;
+}
+.preguntas-frecuentes .preguntas .primera ul li .img-preguntas, .preguntas-frecuentes .preguntas .segunda ul li .img-preguntas, .preguntas-frecuentes .preguntas .tercera ul li .img-preguntas, .preguntas-frecuentes .preguntas .cuarta ul li .img-preguntas, .preguntas-frecuentes .preguntas .quinta ul li .img-preguntas, .preguntas-frecuentes .preguntas .sexta ul li .img-preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .contacto {
   margin: 50px 50px 150px 50px;
   display: flex;

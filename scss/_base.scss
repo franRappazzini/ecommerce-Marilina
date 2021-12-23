@@ -323,6 +323,58 @@ footer {
   }
 }
 
+// PREGUNTAS-FRECUENTES.HTML
+.preguntas-frecuentes {
+  margin: 50px 50px 150px 50px;
+  // display: flex;
+  // align-items: flex-start;
+  // flex-direction: column;
+
+
+  h1 {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    font-size: 170%;
+  }
+
+  .preguntas {
+    align-items: center;
+    text-decoration: none;
+
+    .primera, .segunda, .tercera, .cuarta, .quinta, .sexta {
+      display: flex;
+  
+      ul {
+        list-style: none;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+
+        li {
+
+          h2 {
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 140%;
+          }
+
+          h3 {
+            font-size: 110%;
+            color: gray;
+          }
+
+          .img-preguntas {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
 // CONTACTO.HTML
 .contacto {
   margin: 50px 50px 150px 50px;
