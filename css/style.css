@@ -343,7 +343,8 @@ footer ul li a:hover {
 .preguntas-frecuentes .preguntas .sexta ul li h2 {
   margin-top: 5px;
   font-weight: bold;
-  font-size: 140%;
+  font-size: 30px;
+  color: #414141;
 }
 
 .preguntas-frecuentes .preguntas .primera ul li h3,
@@ -352,8 +353,8 @@ footer ul li a:hover {
 .preguntas-frecuentes .preguntas .cuarta ul li h3,
 .preguntas-frecuentes .preguntas .quinta ul li h3,
 .preguntas-frecuentes .preguntas .sexta ul li h3 {
-  font-size: 110%;
-  color: gray;
+  font-size: 20px;
+  color: grey;
 }
 
 .preguntas-frecuentes .preguntas .primera ul li .img-preguntas,
@@ -378,7 +379,7 @@ footer ul li a:hover {
 
 @media only screen and (max-width: 768px) {
   .preguntas-frecuentes h1 {
-    font-size: 15px;
+    font-size: 20px;
   }
   .preguntas-frecuentes .preguntas .primera ul li .img-preguntas {
     display: none;
@@ -394,6 +395,26 @@ footer ul li a:hover {
     display: block;
     width: 100%;
   }
+  .preguntas-frecuentes .preguntas {
+    align-items: center;
+    text-decoration: none;
+  }
+  .preguntas-frecuentes .preguntas .primera ul li h2,
+  .preguntas-frecuentes .preguntas .segunda ul li h2,
+  .preguntas-frecuentes .preguntas .tercera ul li h2,
+  .preguntas-frecuentes .preguntas .cuarta ul li h2,
+  .preguntas-frecuentes .preguntas .quinta ul li h2,
+  .preguntas-frecuentes .preguntas .sexta ul li h2 {
+    font-size: 20px;
+  }
+  .preguntas-frecuentes .preguntas .primera ul li h3,
+  .preguntas-frecuentes .preguntas .segunda ul li h3,
+  .preguntas-frecuentes .preguntas .tercera ul li h3,
+  .preguntas-frecuentes .preguntas .cuarta ul li h3,
+  .preguntas-frecuentes .preguntas .quinta ul li h3,
+  .preguntas-frecuentes .preguntas .sexta ul li h3 {
+    font-size: 15px;
+  }
 }
 
 .contacto {
@@ -403,16 +424,15 @@ footer ul li a:hover {
 }
 
 .contacto .titulos-contacto {
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
 .contacto .titulos-contacto h1 {
-  font-size: 170%;
+  font-size: 30px;
 }
 
 .contacto .titulos-contacto h2 {
-  font-size: 140%;
+  font-size: 20px;
   color: grey;
 }
 
@@ -437,6 +457,15 @@ footer ul li a:hover {
   list-style: none;
   flex-direction: column;
   align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .contacto .titulos-contacto h1 {
+    font-size: 20px;
+  }
+  .contacto .titulos-contacto h2 {
+    font-size: 15px;
+  }
 }
 
 .main__404 {
