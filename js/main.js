@@ -1,6 +1,7 @@
 $(() => {
   loader();
   btnsCategoria();
+  HTMLFunctions();
 });
 
 class Producto {
@@ -277,15 +278,16 @@ function btnsCategoria() {
   });
 }
 
-// --------------------------------------------------
-$(".li__indumentaria").click(() => $(".ul__hide").toggle("fast"));
+// -----funciones para el dom-----
+function HTMLFunctions() {
+  // muestra y oculta el submenu de categorias en mobile version
+  $(".li__indumentaria").click(() => $(".ul__hide").toggle("fast"));
 
-const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll("nav a").forEach((link) => {
-  if (link.href.includes(`${activePage}`)) {
-    link.classList.add("activeLink");
-    console.log(link);
-  }
-});
-
-console.log(activePage);
+  // crea clase para css en page activa
+  const activePage = window.location.pathname;
+  const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+    if (link.href.includes(`${activePage}`)) {
+      link.classList.add("activeLink");
+    }
+  });
+}
