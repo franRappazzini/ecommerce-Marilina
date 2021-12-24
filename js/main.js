@@ -61,9 +61,6 @@ function renderizarProductos(productos, categoria) {
     filterCategoria(productos, orderByCategorias, categoria)
   );
 
-  console.log(orderByCategorias);
-
-  // orderByCategorias.length > 0 &&
   orderByCategorias.forEach((p) => {
     $(".productos").append(`
         <article class="col-6 col-md-3 mb-3 d-flex justify-content-center">
@@ -283,10 +280,12 @@ function btnsCategoria() {
 // --------------------------------------------------
 $(".li__indumentaria").click(() => $(".ul__hide").toggle("fast"));
 
-// const activePage = window.location.pathname;
-// const navLinks = document.querySelectorAll("nav a").forEach((link) => {
-//   if (link.href.includes(`${activePage}`)) {
-//     link.classList.add("activeLink");
-//     console.log(link);
-//   }
-// });
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("activeLink");
+    console.log(link);
+  }
+});
+
+console.log(activePage);

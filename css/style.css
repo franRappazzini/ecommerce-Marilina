@@ -82,6 +82,10 @@ header a:hover {
   color: white;
 }
 
+header .activeLink {
+  font-weight: 900;
+}
+
 @media only screen and (max-width: 768px) {
   header .desktop__header {
     display: none;
