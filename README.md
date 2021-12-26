@@ -10,7 +10,6 @@ E-commerce responsive construido con JavaScript, HTML y CSS.
 * [Font Awesome Icon](https://fontawesome.com/)
 
 ### Diseño
-
-[Figma](https://www.figma.com/file/S8tK30JkML1Exyo52nHLZc/Web_MF?node-id=25%3A2235)
+[Ver en Figma](https://www.figma.com/file/S8tK30JkML1Exyo52nHLZc/Web_MF?node-id=25%3A2235)
 
 👉🏼[Toque para ver proyecto]()👈🏼
