@@ -66,9 +66,9 @@ function renderizarProductos(productos, categoria) {
     $(".productos").append(`
         <article class="col-6 col-md-3 mb-3 d-flex justify-content-center">
           <div class="card" style="width: 16rem;" >
-            <img src="../assets/img/GA025006273.jpg" class="card-img-top" alt="${
-              p.nombre
-            }" style="height: 12rem; object-fit: cover;">
+            <img src="${p.img1}" class="card-img-top" alt="${
+      p.nombre
+    }" style="height: 12rem; object-fit: cover;">
             <div class="card-body d-flex flex-column justify-content-between">
               <h5 class="card-title text-center">${p.nombre}</h5>
               <p class="card-text text-center">$${p.precio}</p>
@@ -207,6 +207,34 @@ function renderizarProductos(productos, categoria) {
           </div>
         </article>
       `);
+  });
+}
+
+// -----renderiza las img del carousel-----
+function renderizarImgCarousel() {
+  imgCarousel.forEach((i) => {
+    $(".carousel-inner").append(`
+    <div class="carousel-item active">
+      <img
+        src="${i.img1}"
+        class="d-block w-100"
+        alt="img-carousel1"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="${i.img2}"
+        class="d-block w-100"
+        alt="img-carousel2"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        src="${i.img3}"
+        class="d-block w-100"
+         alt="img-carousel3"
+      />
+    </div>`);
   });
 }
 

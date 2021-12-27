@@ -2,7 +2,10 @@
  * FIREBASE CONFIG
  */
 
-$(() => getProductos());
+$(() => {
+  getProductos();
+  getImgCarousel();
+});
 
 const db = firebase.firestore();
 
@@ -35,7 +38,7 @@ function getProductos() {
 
 // -----obtiene las img para el carousel-----
 function getImgCarousel() {
-  db.collection("carousel")
+  db.collection("carrousel")
     .get()
     .then((res) =>
       imgCarousel.push(
@@ -44,5 +47,6 @@ function getImgCarousel() {
         })
       )
     )
-    .catch((err) => console.log(`ERROR: ${err}`));
+    .catch((err) => console.log(`ERROR: ${err}`))
+    .then(() => renderizarImgCarousel());
 }
