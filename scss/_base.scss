@@ -148,7 +148,6 @@ main {
     .ul__categorias {
       justify-content: center;
       list-style: none;
-      // overflow-y: hidden;
       overflow-x: scroll;
       &::-webkit-scrollbar {
         display: none;

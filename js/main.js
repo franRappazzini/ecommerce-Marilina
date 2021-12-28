@@ -68,7 +68,7 @@ function renderizarProductos(productos, categoria) {
           <div class="card" style="width: 16rem;" >
             <img src="${p.img1}" class="card-img-top" alt="${
       p.nombre
-    }" style="height: 12rem; object-fit: cover;">
+    }" style="height: 12rem; object-fit: contain;">
             <div class="card-body d-flex flex-column justify-content-between">
               <h5 class="card-title text-center">${p.nombre}</h5>
               <p class="card-text text-center">$${p.precio}</p>
@@ -115,21 +115,21 @@ function renderizarProductos(productos, categoria) {
                               <img src="${p.img1}" class="d-block w-100" 
                                 alt="${
                                   p.nombre
-                                }" style="height: 25rem; object-fit: cover;"
+                                }" style="height: 25rem; object-fit: contain;"
                               >
                             </div>
                             <div class="carousel-item">
                               <img src="${p.img2}" class="d-block w-100" 
                                 alt="${
                                   p.nombre
-                                }" style="height: 25rem; object-fit: cover;"
+                                }" style="height: 25rem; object-fit: contain;"
                               >
                             </div>
                             <div class="carousel-item">
                               <img src="${p.img3}" class="d-block w-100" 
                                 alt="${
                                   p.nombre
-                                }" style="height: 25rem; object-fit: cover;"
+                                }" style="height: 25rem; object-fit: contain;"
                               >
                             </div>
                           </div>
