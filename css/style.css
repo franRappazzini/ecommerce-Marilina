@@ -174,15 +174,17 @@ main .productos__container .productos article .card:hover {
 }
 
 main .productos__container .productos article .card .card-title {
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 main .productos__container .productos article .card .card-text {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 main .productos__container .productos article .card .precio__producto--cuotas {
+  font-size: 0.9rem;
   font-weight: 500;
   color: white;
   background-color: black;
@@ -250,15 +252,6 @@ main .item-fixed img {
   }
   main .productos__container .ul__categorias::-webkit-scrollbar {
     display: inline;
-  }
-  main .productos__container .productos article .card .h5__producto {
-    font-size: 1.1rem;
-  }
-  main .productos__container .productos article .card .p-precio__producto {
-    font-size: 1rem;
-  }
-  main .productos__container .productos article .card .precio__producto--cuotas {
-    font-size: 0.9rem;
   }
   main .productos__container .productos .hover__zoom {
     pointer-events: none;

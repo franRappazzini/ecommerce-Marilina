@@ -183,15 +183,17 @@ main {
           }
 
           .card-title {
+            font-size: 1.1rem;
             font-weight: 500;
           }
 
           .card-text {
             font-weight: 500;
-            font-size: 18px;
+            font-size: 1.1rem;
           }
 
           .precio__producto--cuotas {
+            font-size: 0.9rem;
             font-weight: 500;
             color: white;
             background-color: black;
@@ -272,19 +274,6 @@ main {
       }
 
       .productos {
-        article .card {
-          .h5__producto {
-            font-size: 1.1rem;
-          }
-
-          .p-precio__producto {
-            font-size: 1rem;
-          }
-
-          .precio__producto--cuotas {
-            font-size: 0.9rem;
-          }
-        }
         .hover__zoom {
           pointer-events: none;
         }
