@@ -133,7 +133,7 @@ main {
   }
 
   .carousel__container {
-    img {
+    .img__carousel {
       max-height: 300px;
       object-fit: cover;
     }
@@ -256,6 +256,13 @@ main {
   }
 
   @media only screen and (max-width: 768px) {
+    .carousel__container {
+      .img__carousel {
+        height: 150px;
+        object-fit: contain;
+      }
+    }
+
     .productos__container {
       .ul__categorias {
         justify-content: flex-start;

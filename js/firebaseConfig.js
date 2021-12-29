@@ -41,11 +41,7 @@ function getImgCarousel() {
   db.collection("carrousel")
     .get()
     .then((res) =>
-      imgCarousel.push(
-        ...res.docs.map((doc) => {
-          doc.id, doc.data().link, doc.data().number;
-        })
-      )
+      imgCarousel.push(...res.docs.map((i) => ({ id: i.id, ...i.data() })))
     )
     .catch((err) => console.log(`ERROR: ${err}`))
     .then(() => renderizarImgCarousel());

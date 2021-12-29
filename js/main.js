@@ -217,21 +217,21 @@ function renderizarImgCarousel() {
     <div class="carousel-item active">
       <img
         src="${i.img1}"
-        class="d-block w-100"
+        class="d-block w-100 img__carousel"
         alt="img-carousel1"
       />
     </div>
     <div class="carousel-item">
       <img
         src="${i.img2}"
-        class="d-block w-100"
+        class="d-block w-100 img__carousel"
         alt="img-carousel2"
       />
     </div>
     <div class="carousel-item">
       <img
         src="${i.img3}"
-        class="d-block w-100"
+        class="d-block w-100 img__carousel"
          alt="img-carousel3"
       />
     </div>`);

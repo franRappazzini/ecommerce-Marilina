@@ -128,7 +128,7 @@ main h1 {
   font-weight: bold;
 }
 
-main .carousel__container img {
+main .carousel__container .img__carousel {
   max-height: 300px;
   object-fit: cover;
 }
@@ -241,6 +241,10 @@ main .item-fixed img {
 }
 
 @media only screen and (max-width: 768px) {
+  main .carousel__container .img__carousel {
+    height: 150px;
+    object-fit: contain;
+  }
   main .productos__container .ul__categorias {
     justify-content: flex-start;
   }
