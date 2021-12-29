@@ -251,6 +251,15 @@ main .item-fixed img {
   main .productos__container .ul__categorias::-webkit-scrollbar {
     display: inline;
   }
+  main .productos__container .productos article .card .h5__producto {
+    font-size: 1.1rem;
+  }
+  main .productos__container .productos article .card .p-precio__producto {
+    font-size: 1rem;
+  }
+  main .productos__container .productos article .card .precio__producto--cuotas {
+    font-size: 0.9rem;
+  }
   main .productos__container .productos .hover__zoom {
     pointer-events: none;
   }

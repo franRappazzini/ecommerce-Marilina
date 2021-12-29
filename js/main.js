@@ -70,8 +70,10 @@ function renderizarProductos(productos, categoria) {
       p.nombre
     }" style="height: 12rem; object-fit: contain;">
             <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title text-center">${p.nombre}</h5>
-              <p class="card-text text-center">$${p.precio}</p>
+              <h5 class="card-title text-center h5__producto">${p.nombre}</h5>
+              <p class="card-text text-center p-precio__producto">$${
+                p.precio
+              }</p>
               <p class="precio__producto--cuotas text-center mb-1"><strong>3</strong> cuotas sin interés de <strong>$${new Intl.NumberFormat().format(
                 Math.ceil(p.precioCuotas / 3)
               )}</strong></p>
