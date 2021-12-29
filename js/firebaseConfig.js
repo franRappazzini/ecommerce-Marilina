@@ -43,9 +43,9 @@ function getImgCarousel() {
     .then((res) =>
       imgCarousel.push(...res.docs.map((i) => ({ id: i.id, ...i.data() })))
     )
-    .catch((err) => console.log(`ERROR: ${err}`))
     .then(() => {
       renderizarImgCarousel();
       console.log(imgCarousel);
-    });
+    })
+    .catch((err) => console.log(`ERROR: ${err}`));
 }
