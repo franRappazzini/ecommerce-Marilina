@@ -32,8 +32,8 @@ function getProductos() {
         )
       )
     )
-    .then(() => renderizarProductos(productos, "Todas"))
-    .catch((err) => console.log(`ERROR: ${err}`));
+    .catch((err) => console.log(`ERROR: ${err}`))
+    .then(() => renderizarProductos(productos, "Todas"));
 }
 
 // -----obtiene las img para el carousel-----
@@ -43,9 +43,9 @@ function getImgCarousel() {
     .then((res) =>
       imgCarousel.push(...res.docs.map((i) => ({ id: i.id, ...i.data() })))
     )
+    .catch((err) => console.log(`ERROR: ${err}`))
     .then(() => {
       renderizarImgCarousel();
       console.log(imgCarousel);
-    })
-    .catch((err) => console.log(`ERROR: ${err}`));
+    });
 }
