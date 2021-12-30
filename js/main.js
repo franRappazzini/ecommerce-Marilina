@@ -215,7 +215,7 @@ function renderizarProductos(productos, categoria) {
 // -----renderiza las img del carousel-----
 function renderizarImgCarousel() {
   imgCarousel.forEach((i) => {
-    $(".carousel-inner").append(`
+    $(".carousel-inner:first").append(`
     <div class="carousel-item active">
       <img
         src="${i.img1}"
